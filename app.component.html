@@ -1,0 +1,10 @@
+<h2></h2>
+
+  <app-form *ngIf="appState === 'Form'"
+  (nameSet)="onNameSet($event)">
+</app-form>
+
+<app-game *ngIf=" appState ==='Game'"
+(namSet)="onNamSet($event)"
+></app-game>
+

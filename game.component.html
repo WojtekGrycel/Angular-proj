@@ -1,0 +1,15 @@
+<p>Gra</p>
+<!-- <p>{{'myWiadomosc'}}</p> -->
+
+  <button (click)="closeGame()" >Exit</button>
+    <tetris-core #game
+    (onlineCleared)="onLineCleared()"></tetris-core>
+
+    <button (click)="game.actionStart()">Start</button>
+    <button (click)="game.actionStop()">Stop</button>
+    <button (click)="game.actionReset()">Reset</button>
+    <button (click)="game.actionRotate()">Rotate</button>
+    <button (click)="game.actionLeft()">Left</button>
+    <button (click)="game.actionRight()">Right</button>
+    <button (click)="game.actionDown()">Down</button>
+
